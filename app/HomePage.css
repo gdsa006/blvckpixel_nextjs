@@ -6,16 +6,16 @@
   
   .logo {
     position: absolute;
-    bottom: 20px;
+    bottom: 6vh;
     left: 20px;
     opacity: 0;
-    animation: fadeInLogo 2s ease-in-out 1s forwards;
+    animation: fadeInLogo 2s ease-in-out 1s forwards, logoFade 2s ease-in-out 8s forwards;
   }
   
   .blvckPixel {
     position: absolute;
-    bottom: 20px;
-    left: 80px;
+    bottom: 10vh;
+    left: 100px;
     opacity: 0;
     animation: fadeInBlvckPixel 2s ease-in-out 2s forwards, fadeOutBlvckPixel 1s ease-in-out 4s forwards;
     color: black;
@@ -23,8 +23,8 @@
   
   .foresightCompany {
     position: absolute;
-    bottom: 20px;
-    left: 80px;
+    bottom: 10vh;
+    left: 100px;
     opacity: 0;
     animation: fadeInForesight 2s ease-in-out 6s forwards, fadeOutForesight 2s ease-in-out 8s forwards;
     color: black;
@@ -42,10 +42,8 @@
   
   .foresight {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    bottom: 20px;
-    left: 80px;
+    bottom: 10vh;
+    left: 15vw;
     opacity: 0;
     color: black;
     transition: all 5s ease;
@@ -59,6 +57,7 @@
 
   .paragraph {
     position: absolute;
+    left: 10vw;
     top: calc(60% + 20px);
     opacity: 1;
     transition: opacity 1s ease-in-out 8s; /* Delayed opacity transition */
@@ -115,5 +114,13 @@
     }
     to {
       transform: translateY(-300px);
+    }
+  }
+  @keyframes logoFade{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
   }

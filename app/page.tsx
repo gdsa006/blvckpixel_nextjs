@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import './HomePage.css';
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <img src="/logo.png" className="logo" alt="Logo" />
+      <Image src="/blvckpixel2.svg" className="logo" alt="Logo" width={400} height={100} />
       <span className="blvckPixel">BLVCK PIXEL</span>
       <span className="foresightCompany">The Foresight Company</span>
       <div className="text-container">
