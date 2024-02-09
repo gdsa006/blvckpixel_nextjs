@@ -16,6 +16,7 @@ export default function Home() {
   const [showAnthroTech, setShowAnthroTech] = useState(false);
   const [showAnthroPara, setShowAnthroPara] = useState(false);
   const [showPara, setShowPara] = useState(false);
+  const [showServices, setShowServices] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -60,6 +61,10 @@ export default function Home() {
       setShowPara(true);
     }, 39000 );
 
+    const showServicesTimeout = setTimeout(() =>{
+      setShowServices(true)
+    }, 44000);
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -73,6 +78,7 @@ export default function Home() {
       clearTimeout(showAnthroTechTimeout);
       clearTimeout(showAnthroParaTimeout);
       clearTimeout(showParaTimeout);
+      clearTimeout(showServicesTimeout);
     };
   }, []);
 
@@ -141,7 +147,7 @@ export default function Home() {
           {showPara && (
             <div className='para-exist'>
               <div className={`para-exist1 text-black xl:text-3xl sm:text-xl ${showPara ? 'appear-from-bottom' : ''}`}>
-                The stone ax, the wheel, the steam engine, the computer, and now AI - the advancement of humanity has always been drivem by our ability to innovate. No other technology will have been as impactful on our world as artificial intellgence.
+                The stone ax, the wheel, the steam engine, the computer, and now AI - the advancement of humanity has always been driven by our ability to innovate. No other technology will have been as impactful on our world as artificial intellgence.
               </div>
               <div className={`para-exist2 text-black xl:text-3xl sm:text-xl ${showPara ? 'appear-from-bottom' : ''}`}>
                 We attempt to foresee these developments at all levels.
@@ -153,6 +159,14 @@ export default function Home() {
           )}
           
           {/* From here starts the what we do section  */}
+          {showServices && (
+          <div className='services xl:text-3xl sm:text-xl'>
+            <p>&#91; services &#93; </p>
+          </div>
+          )}
+          <div>
+            Through advisory, consulting, strategic planning, prototyping, and realisation, we prepare and transition our clients into the age of artificial general intelligence
+          </div>
     </div>
   );
 };
