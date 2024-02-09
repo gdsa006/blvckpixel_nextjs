@@ -96,7 +96,7 @@ export default function Home() {
             By staying ahead of current trends we future-proof our clients so that they anticipate, leap forward, and develop new operation models that align with what is to come.
           </div>
           <div className={`para3 text-black text-2xl ${showLastParagraphs ? 'appear-from-bottom' : ''}`}>
-            We look beyond &#91; what's next &#93; . to what's &#91; after next &#93;.
+            We look beyond &#91; what&apos;s next &#93; . to what&apos;s &#91; after next &#93;.
           </div>
         </div>
       )}
