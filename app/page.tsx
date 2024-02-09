@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import './HomePage.css';
 
@@ -13,12 +13,15 @@ export default function Home() {
   const [showBlvck, setShowBlvck] = useState(false);
   const [showVision, setShowVision] = useState(false);
   const [showLastParagraphs, setShowLastParagraphs] = useState(false);
+  const [showAnthroTech, setShowAnthroTech] = useState(false);
+  const [showAnthroPara, setShowAnthroPara] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
       const sectionIndex = Math.floor(window.scrollY / window.innerHeight);
       setCurrentSection(sectionIndex);
     }
+
     const timeout = setTimeout(() => {
       setShowBrackets(true);
     }, 9000);
@@ -44,6 +47,13 @@ export default function Home() {
       setShowLastParagraphs(true);
     }, 26000);
 
+    const showAnthroTechTimeout = setTimeout(() => {
+      setShowAnthroTech(true);
+    }, 33000);
+    const showAnthroParaTimeout = setTimeout(() => {
+      setShowAnthroPara(true);
+    }, 34500);
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -54,6 +64,8 @@ export default function Home() {
       clearTimeout(paragraphTimeout1);
       clearTimeout(visionTimeout);
       clearTimeout(showLastParagraphsTimeout);
+      clearTimeout(showAnthroTechTimeout);
+      clearTimeout(showAnthroParaTimeout);
     };
   }, []);
 
@@ -96,10 +108,26 @@ export default function Home() {
             By staying ahead of current trends we future-proof our clients so that they anticipate, leap forward, and develop new operation models that align with what is to come.
           </div>
           <div className={`para3 text-black text-2xl ${showLastParagraphs ? 'appear-from-bottom' : ''}`}>
-            We look beyond &#91; what&apos;s next &#93; . to what&apos;s &#91; after next &#93;.
+            We look beyond &#91; what's next &#93; . to what's &#91; after next &#93;.
           </div>
         </div>
       )}
+        {showAnthroTech && ( 
+          <div className={`anthro-tech ${showAnthroTech ? 'appear-first-move-up' : ''} text-black text-3xl mb-8`}>
+            &#91;anthropology + technology&#93;
+          </div>
+          )}
+          {showAnthroPara && ( 
+          <div className='anthro-para'>
+            <div className={`anthro-para1 text-black xl:text-3xl sm:text-xl ${showAnthroPara ? 'appear-from-bottom' : ''}`}>
+              This best defines what we do at BLVCKPIXEL
+            </div>
+            <div className={`anthro-para2 text-black xl:text-3xl sm:text-xl ${showAnthroPara ? 'appear-from-bottom' : ''}`}>
+              It means we envision and prepare for a world in which human ingenuity converges with the machine intelligence to design a better future.
+            </div>
+          </div>
+          )};
+          
     </div>
   );
 };

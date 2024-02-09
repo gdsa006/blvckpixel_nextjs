@@ -9,7 +9,7 @@
   bottom: 6vh;
   left: 20px;
   opacity: 0;
-  animation: fadeInLogo 2s ease-in-out 1s forwards, logoFade 2s ease-in-out 8s forwards;
+  animation: fadeIn 2s ease-in-out 1s forwards, fadeOut 2s ease-in-out 8s forwards;
 }
 
 .blvckPixel {
@@ -17,7 +17,7 @@
   bottom: 10vh;
   left: 100px;
   opacity: 0;
-  animation: fadeInBlvckPixel 2s ease-in-out 2s forwards, fadeOutBlvckPixel 1s ease-in-out 4s forwards;
+  animation: fadeIn 2s ease-in-out 2s forwards, fadeOut 1s ease-in-out 4s forwards;
   color: black;
 }
 
@@ -26,7 +26,7 @@
   bottom: 10vh;
   left: 100px;
   opacity: 0;
-  animation: fadeInForesight 2s ease-in-out 6s forwards, fadeOutForesight 2s ease-in-out 8s forwards;
+  animation: fadeIn 2s ease-in-out 6s forwards, fadeOut 2s ease-in-out 8s forwards;
   color: black;
   user-select: none;
 }
@@ -43,7 +43,7 @@
   opacity: 0;
   color: black;
   transition: all 5s ease;
-  animation: fadeInForesight 2s ease-in-out 2s forwards, moveUp 2s 12s forwards, foresightFade 1s 18s forwards;
+  animation: fadeIn 2s ease-in-out 2s forwards, moveUp 2s 12s forwards, fadeOut 1s 18s forwards;
 }
 
 .foresight.slide-up::after {
@@ -65,7 +65,7 @@
   bottom: 10vh;
   left: 100px;
   color: black;
-  animation: fadeInBlvckPixell 2s ease-in-out 20s forwards, fadeOutBlvckPixell 1s ease-in-out 2s forwards;
+  animation: fadeIn 2s ease-in-out 20s forwards, fadeOut 1s ease-in-out 2s forwards;
 }
 
 .v {
@@ -73,7 +73,7 @@
   bottom: 10vh;
   left: 9vw;
   color: black;
-  animation: slide-up 2s 22s forwards, vfadeOut 2s ease-in-out 26s forwards;
+  animation: slide-up 2s 22s forwards, fadeOut 2s ease-in-out 26s forwards;
 }
 
 .v.move-left {
@@ -91,7 +91,7 @@
   transition: opacity 1s ease-in-out 8s;
   color: black;
   text-align: left;
-  animation: vfadeOut 2s ease-in-out 2s forwards;
+  animation: fadeOut 2s ease-in-out 2s forwards;
 }
 
 .paragraphs-container {
@@ -102,10 +102,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: parafadeOut 3s ease-in-out 6s forwards;
+  animation: fadeOut 3s ease-in-out 6s forwards;
 }
 
-.para1, .para2, .para3 {
+.para1, .para2, .para3, .anthro-para1, .anthro-para2 {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -128,6 +128,30 @@
   animation-delay: 3s;
   margin-bottom: 2vh;
 }
+.anthro-tech{
+  position: absolute;
+  bottom: 10vh;
+  left: 10vw;
+  color: black;
+  animation: moveUp 1s ease-in-out 2s forwards;
+}
+.anthro-para{
+  position: absolute;
+  bottom: 0;
+  left: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.anthro-para1 {
+  animation-delay: 1s;
+  margin-bottom: 5vh;
+}
+
+.anthro-para2 {
+  animation-delay: 2s;
+  margin-bottom: 5vh;
+}
 
 @keyframes appear-from-bottom {
   from {
@@ -140,7 +164,7 @@
   }
 }
   
-  @keyframes fadeInLogo {
+  @keyframes fadeIn {
     from {
       opacity: 0;
     }
@@ -149,73 +173,7 @@
     }
   }
   
-  @keyframes fadeInBlvckPixel {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeOutBlvckPixel {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes fadeInForesight {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeOutForesight {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  @keyframes moveUp {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-150px);
-    }
-  }
-  @keyframes logoFade{
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-  }
-  @keyframes foresightFade {
-    from {
-      opacity: 1;
-    }
-    to{
-      opacity: 0;
-    }
-  }
-  @keyframes fadeInBlvckPixell {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeOutBlvckPixell {
+  @keyframes fadeOut {
     from {
       opacity: 1;
     }
@@ -234,19 +192,12 @@
       transform: translateY(-150px);
     }
   }
-  @keyframes vfadeOut {
+
+  @keyframes moveUp {
     from {
-      opacity: 1;
+      transform: translateY(0);
     }
     to {
-      opacity: 0;
-    }
-  }
-  @keyframes parafadeOut{
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
+      transform: translateY(-150px);
     }
   }
