@@ -105,7 +105,7 @@
   animation: fadeOut 3s ease-in-out 6s forwards;
 }
 
-.para1, .para2, .para3, .anthro-para1, .anthro-para2 {
+.para1, .para2, .para3, .anthro-para1, .anthro-para2, .para-exist1, .para-exist2, .para-exist3 {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -133,7 +133,7 @@
   bottom: 10vh;
   left: 10vw;
   color: black;
-  animation: moveUp 1s ease-in-out 2s forwards;
+  animation: moveUp 1s ease-in-out 2s forwards,fadeOut 2s ease-in-out 5s forwards;
 }
 .anthro-para{
   position: absolute;
@@ -142,6 +142,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
+  animation: fadeOut 2s ease-in-out 5s forwards;
 }
 .anthro-para1 {
   animation-delay: 1s;
@@ -150,6 +151,28 @@
 
 .anthro-para2 {
   animation-delay: 2s;
+  margin-bottom: 5vh;
+}
+.para-exist{
+  position: absolute;
+  bottom: 0;
+  left: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.para-exist1 {
+  animation-delay: 1s;
+  margin-bottom: 5vh;
+}
+
+.para-exist2 {
+  animation-delay: 2s;
+  margin-bottom: 5vh;
+}
+
+.para-exist3 {
+  animation-delay: 3s;
   margin-bottom: 5vh;
 }
 

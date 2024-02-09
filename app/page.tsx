@@ -15,6 +15,7 @@ export default function Home() {
   const [showLastParagraphs, setShowLastParagraphs] = useState(false);
   const [showAnthroTech, setShowAnthroTech] = useState(false);
   const [showAnthroPara, setShowAnthroPara] = useState(false);
+  const [showPara, setShowPara] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -50,9 +51,14 @@ export default function Home() {
     const showAnthroTechTimeout = setTimeout(() => {
       setShowAnthroTech(true);
     }, 33000);
+
     const showAnthroParaTimeout = setTimeout(() => {
       setShowAnthroPara(true);
     }, 34500);
+    
+    const showParaTimeout = setTimeout(() => {
+      setShowPara(true);
+    }, 39000 );
 
     window.addEventListener('scroll', handleScroll);
 
@@ -66,6 +72,7 @@ export default function Home() {
       clearTimeout(showLastParagraphsTimeout);
       clearTimeout(showAnthroTechTimeout);
       clearTimeout(showAnthroParaTimeout);
+      clearTimeout(showParaTimeout);
     };
   }, []);
 
@@ -112,6 +119,10 @@ export default function Home() {
           </div>
         </div>
       )}
+
+          {/* Code below this is the part of the why we exist section */}
+
+
         {showAnthroTech && ( 
           <div className={`anthro-tech ${showAnthroTech ? 'appear-first-move-up' : ''} text-black text-3xl mb-8`}>
             &#91;anthropology + technology&#93;
@@ -127,7 +138,21 @@ export default function Home() {
             </div>
           </div>
           )};
+          {showPara && (
+            <div className='para-exist'>
+              <div className={`para-exist1 text-black xl:text-3xl sm:text-xl ${showPara ? 'appear-from-bottom' : ''}`}>
+                The stone ax, the wheel, the steam engine, the computer, and now AI - the advancement of humanity has always been drivem by our ability to innovate. No other technology will have been as impactful on our world as artificial intellgence.
+              </div>
+              <div className={`para-exist2 text-black xl:text-3xl sm:text-xl ${showPara ? 'appear-from-bottom' : ''}`}>
+                We attempt to foresee these developments at all levels.
+              </div>
+              <div className={`para-exist3 text-black xl:text-3xl sm:text-xl ${showPara ? 'appear-from-bottom' : ''}`}>
+                The emergence of cognitive technologies will result in the most rapid socio-economic disruption since the biginning of recorded history. In the next few years, no matter the enterprise, government or organisation, every business and operational model will have to adapt, and evolve.
+              </div>
+            </div>
+          )}
           
+          {/* From here starts the what we do section  */}
     </div>
   );
 };
