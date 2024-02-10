@@ -264,7 +264,7 @@ export default function Home() {
             Through advisory, consulting, strategic planning, prototyping, and realisation, we prepare and transition our clients into the age of artificial general intelligence
           </div>
           <div className='prep2'>
-            Our future proofing services is a 3 stages' cycle of foresight, preparation, and implementation.
+            Our future proofing services is a 3 stages cycle of foresight, preparation, and implementation.
           </div>
         </div>
       )}
