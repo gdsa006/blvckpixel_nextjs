@@ -185,7 +185,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-    </div>
     <div className='who-we-are'>
       <Image src="/blvckpixel2.svg" className="logo" alt="Logo" width={400} height={100} />
       <span className="blvckPixel text-3xl">BLVCK PIXEL</span>
@@ -308,8 +307,8 @@ export default function Home() {
         </div>
       )}
       {showTodayPrep && (
-        <div className='prep-head text-3xl'>
-          <div className='prep1 text-3xl'>
+        <div className='prep-head text-2xl'>
+          <div className='prep1'>
             Implementation | Now!
           </div>
           <div className='prep2'>
@@ -322,7 +321,7 @@ export default function Home() {
       )}
     </div>
       {/* whom we work from section starts from here */}
-      <div className='prep'>
+      {/* <div className='prep'>
         &#91; clients &#93;
       </div>
       <div className='prep-head'>
@@ -334,12 +333,12 @@ export default function Home() {
         </div>
         <div className='prep3'>
           We innovate as one.
-        </div>
+        </div> */}
         <div>
           {/* slider comes here */}
         </div>
-      </div>
-      <div className='prep'>
+      {/* </div> */}
+      {/* <div className='prep'>
         &#91; you &#93;
       </div>
       <div className='prep-head'>
@@ -382,10 +381,11 @@ export default function Home() {
         <div className='prep1'>
           In addition, our partners bring complementary services that assure the readiness and scalability of our use cases and new business models.
         </div>
-        <div>
+        <div> */}
           {/* here comes the slider */}
-        </div>
-      </div>
+        {/* </div>
+      </div> */}
+    </div>
       
     </>
   );
