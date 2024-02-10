@@ -3,6 +3,15 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './HomePage.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/swiper-bundle.css';
+// import required modules
+import { Autoplay, Pagination, EffectFade} from 'swiper/modules';
+
 
 const sections = ['[ who we are ]','[ why we exist]','[ what we do ]', '[ whom we work for ]', '[ how we work ]', '[ journal ]', '[ contact | jobs ]'];
 
@@ -120,7 +129,50 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+  <>
+    <section className='h-screen w-screen'>
+    <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}        
+        effect='fade'
+        fadeEffect={{
+          crossFade: true, // This replaces the effectFade prop in previous versions
+        }}
+        
+        loop={true}         
+
+        modules={[Autoplay, Pagination, EffectFade]}
+        className="mySwiper"
+      >
+
+         <SwiperSlide>
+            <div className="bg-[url('/pexels.jpg')] flex flex-col justify-center p-10 gap-10  bg-cover object-contain h-screen w-screen">
+              <h1 className='text-5xl font-bold md:text-7xl'>The Rise of AI</h1>
+              <h3 className='text-2xl font-medium md:text-3xl'>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
+              <h5 className='text-base md:text-lg'><a href='/'>→ Click [here] </a> to read the journal</h5>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+          <div className="bg-[url('/pexels.jpg')] flex flex-col justify-center p-10 gap-10  bg-cover object-contain h-screen w-screen">
+              <h1 className='text-5xl font-bold md:text-7xl'>Quantum Leap</h1>
+              <h3 className='text-2xl font-medium md:text-3xl'>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
+              <h5 className='text-base md:text-lg'><a href='/'>→ Click [here] </a> to read the journal</h5>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+          <div className="bg-[url('/pexels.jpg')] flex flex-col justify-center p-10 gap-10  bg-cover object-contain h-screen w-screen">
+              <h1 className='text-5xl font-bold md:text-7xl'>Cognitive Cities</h1>
+              <h3 className='text-2xl font-medium md:text-3xl'>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
+              <h5 className='text-base md:text-lg'><a href='/'>→ Click [here] </a> to read the journal</h5>
+            </div>
+          </SwiperSlide>            
+    </Swiper>
+      
+    </section>
     <div className="container">
       <div className="scrollable-section text-black">
         {sections.map((section, index) => (
