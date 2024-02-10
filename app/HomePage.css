@@ -2,9 +2,23 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
-
-
+.scrollable-section{
+  margin-left: 80vw;
+}
+/* .who-we-are {
+  height: 100vh;
+} */
+/* .why-we-exist{
+  height: 100vh;
+}
+.what-we-do {
+  height: 100vh;
+}
+.whom-we-work{
+  height: 100vh;
+} */
 .logo {
   position: absolute;
   bottom: 6vh;
@@ -81,7 +95,7 @@
   transition: left 2s ease-in-out;
 }
 .v.slide-up::after {
-  content: " = [ Vision ]";
+  content: "V = [ Vision ]";
 }
 
 .paragraph1 {
@@ -98,15 +112,14 @@
 .paragraphs-container {
   position: absolute;
   bottom: 0;
-  left: 40vw;
-  transform: translateX(-50%);
+  left: 17vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: fadeOut 3s ease-in-out 6s forwards;
 }
 
-.para1, .para2, .para3, .anthro-para1, .anthro-para2, .para-exist1, .para-exist2, .para-exist3 {
+.para1, .para2, .para3 {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -129,31 +142,7 @@
   animation-delay: 3s;
   margin-bottom: 2vh;
 }
-.anthro-tech{
-  position: absolute;
-  bottom: 10vh;
-  left: 10vw;
-  color: black;
-  animation: moveUp 1s ease-in-out 2s forwards,fadeOut 2s ease-in-out 5s forwards;
-}
-.anthro-para{
-  position: absolute;
-  bottom: 0;
-  left: 10vw;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  animation: fadeOut 2s ease-in-out 5s forwards;
-}
-.anthro-para1 {
-  animation-delay: 1s;
-  margin-bottom: 5vh;
-}
 
-.anthro-para2 {
-  animation-delay: 2s;
-  margin-bottom: 5vh;
-}
 .para-exist{
   position: absolute;
   bottom: 0;
@@ -178,13 +167,32 @@
   margin-bottom: 5vh;
 }
 
-.services{
+.prep{
   position: absolute;
-  bottom: 10vh;
-  left: 17vw;
+  bottom: 5vh;
+  left: 10vw;
   color: black;
-  transition: all 5s ease;
-  animation: moveUp 1s ease-in-out 2s forwards;
+  animation: moveUp 1s ease-in-out 2s forwards, fadeOut 1s ease-in-out 4s forwards;
+}
+.prep-head{
+  position: absolute;
+  bottom: 0;
+  left: 10vw;
+  color: black;
+  animation: fadeOut 1s ease-in-out 2s forwards;
+}
+.prep1 {
+  animation-delay: 1s;
+  margin-bottom: 5vh;
+}
+
+.prep2 {
+  animation-delay: 2s;
+  margin-bottom: 5vh;
+}
+.prep3 {
+  animation-delay: 2s;
+  margin-bottom: 5vh;
 }
 
 @keyframes appear-from-bottom {
@@ -232,6 +240,6 @@
       transform: translateY(0);
     }
     to {
-      transform: translateY(-150px);
+      transform: translateY(-250px);
     }
   }
