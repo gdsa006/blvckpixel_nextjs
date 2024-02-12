@@ -3,7 +3,6 @@
 
 import { useEffect, useState } from 'react';
 import './test.css'; // Import the CSS module
-import Contents from './contents'
 
 const ScrollingDivs = () => {
   const [currentDivIndex, setCurrentDivIndex] = useState(0);

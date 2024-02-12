@@ -132,7 +132,7 @@ export default function Home() {
                       By staying ahead of current trends we future-proof our clients so that they anticipate, leap forward, and develop new operation models that align with what is to come.
                     </div>
                     <div className="para3 text-black text-2xl">
-                      We look beyond &#91; what's next &#93;. to what's &#91; after next &#93;.
+                      We look beyond &#91; what&apos;s next &#93;. to what&apos;s &#91; after next &#93;.
                     </div>
                     </div>
                 </>
@@ -193,7 +193,7 @@ export default function Home() {
               <>
                 <div className="childDiv">
                   <div className='prep xl:text-3xl sm:text-xl'>
-                    [ what's after next ]
+                    [ what&apos;s after next ]
                   </div>
                 </div>
                   <div className='prep-head text-black w-1/2 sm:text-xl'>
@@ -210,7 +210,7 @@ export default function Home() {
               <>
                 <div className="childDiv">
                   <div className='prep xl:text-3xl sm:text-xl'>
-                    [ what's next ]
+                    [ what&apos;s next ]
                   </div>
                 </div>
                   <div className='prep-head text-black w-1/2 sm:text-xl'>
@@ -230,7 +230,7 @@ export default function Home() {
             {section === '9' && (
               <>
                   <div className='prep xl:text-3xl sm:text-xl'>
-                    [ what's today ]
+                    [ what&apos;s today ]
                   </div>
                   <div className='prep-head text-black w-1/2 sm:text-xl'>
                     <div className='prep1'>
@@ -286,7 +286,7 @@ export default function Home() {
               What makes our team so different?
             </div>
             <div className='prep2'>
-              It's all about our unique set up and perspective on the future. Beyond being &#91; thought-leaders &#93; and &#91; visionaries &#93;, we are &#91; builders &#93;.
+              It&apos;s all about our unique set up and perspective on the future. Beyond being &#91; thought-leaders &#93; and &#91; visionaries &#93;, we are &#91; builders &#93;.
             </div>
             </div>
             </>
