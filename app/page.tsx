@@ -11,7 +11,8 @@ import 'swiper/css/navigation';
 import 'swiper/swiper-bundle.css';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 
-const sections = ['1','2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'];
+const sections = ['1','2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14','15'];
+
 
 export default function Home() {
   const [currentDivIndex, setCurrentDivIndex] = useState(0);
@@ -34,7 +35,18 @@ export default function Home() {
       window.removeEventListener('wheel', handleScroll);
     };
   }, [currentDivIndex]);
-
+  const scrolltoHash = function (index: number) {
+    const container = document.querySelector('.container') as HTMLElement | null;
+    if (container) {
+      const sectionHeight = container.clientHeight;
+      const scrollTo = index * sectionHeight;
+      container.scrollTo({
+        top: scrollTo,
+        behavior: 'smooth'
+      });
+    }
+  }
+  
   return (
     <>
       <section className='h-screen w-screen'>
@@ -57,33 +69,45 @@ export default function Home() {
             <div className="bg-[url('/pixel3.png')] flex flex-col justify-center p-10 gap-10  bg-cover object-contain h-screen w-screen">
               <h1 className='text-5xl font-bold md:text-7xl'>The Rise of AI</h1>
               <h3 className='text-2xl font-medium md:text-3xl'>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
-              <h5 className='text-base md:text-lg'><a href='/'>→ Click [here] </a> to read the journal</h5>
+              <h5 className='text-base md:text-lg'><Link href='/'>→ Click [here] </Link> to read the journal</h5>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="bg-[url('/pixel2.png')] flex flex-col justify-center p-10 gap-10  bg-cover object-contain h-screen w-screen">
               <h1 className='text-5xl font-bold md:text-7xl'>Quantum Leap</h1>
               <h3 className='text-2xl font-medium md:text-3xl'>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
-              <h5 className='text-base md:text-lg'><a href='/'>→ Click [here] </a> to read the journal</h5>
+              <h5 className='text-base md:text-lg'><Link href='/'>→ Click [here] </Link> to read the journal</h5>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="bg-[url('/pixel1.png')] flex flex-col justify-center p-10 gap-10  bg-cover object-contain h-screen w-screen">
               <h1 className='text-5xl font-bold md:text-7xl'>Cognitive Cities</h1>
               <h3 className='text-2xl font-medium md:text-3xl'>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
-              <h5 className='text-base md:text-lg'><a href='/'>→ Click [here] </a> to read the journal</h5>
+              <h5 className='text-base md:text-lg'><Link href='/'>→ Click [here] </Link> to read the journal</h5>
             </div>
           </SwiperSlide>
         </Swiper>
       </section>
 
       <div className="container">
+        <div className="scrollable-menu">
+          <div className="menu-items">
+            <div className='menu-item'><div onClick={() => scrolltoHash(0)}> &#91; who we are &#93;</div></div>
+            <div className='menu-item1'><div onClick={() => scrolltoHash(3)}> &#91; why we exist &#93;</div></div>
+            <div className='menu-item2'><div onClick={() => scrolltoHash(5)}> &#91; what we do &#93;</div></div>
+            <div className='menu-item3'><div onClick={() => scrolltoHash(9)}> &#91; whom we work for &#93;</div></div>
+            <div className='menu-item4'><div onClick={() => scrolltoHash(11)}> &#91; how we work &#93;</div></div>
+            <div className='menu-item5'><div onClick={() => scrolltoHash(12)}> &#91; journal &#93;</div></div>
+            <div className='menu-item6'><div onClick={() => scrolltoHash(14)}> &#91; contact | jobs &#93;</div></div>
+          </div>
+        </div>
         {sections.map((section, index) => (
           <div
             key={index}
             className={`childDiv ${currentDivIndex === index ? 'visible' : 'hidden'}`}
             style={{ transform: `translateY(-${currentDivIndex * childDivHeight}vh)` }}
           >
+            <div id='who-we-are' className='section'>
             {section === '1' && (
               <>
               <div>
@@ -137,7 +161,8 @@ export default function Home() {
                     </div>
                 </>
                 )}
-            
+                </div>
+            <div id='why-we-exist' className='section'>
             {section === '4' && (
               <>
                 <div className="childDiv">
@@ -171,7 +196,8 @@ export default function Home() {
                   </div>
               </>
             )}
-
+            </div>
+            <div id='what-we-do' className='section'>
             {section === '6' && (
               <>
                 <div className="childDiv">
@@ -245,12 +271,14 @@ export default function Home() {
                   </div>
               </>
             )}
+             </div>
+             <div id='whom-we-work-for' className='section'>
             {section === '10' && (
               <>
             <div  className='prep xl:text-3xl sm:text-xl'>
               &#91; clients &#93;
             </div>
-            <div className='prep-head text-xl'>
+            <div className='prep-head text-2xl mb-12'>
               They inspire us. <br />
               We advise them. <br />
               We innovate as one.
@@ -276,6 +304,8 @@ export default function Home() {
             </div>
             </>
             )}
+             </div>
+             <div id='how-we-work' className='section'>
             {section === '12' && (
               <>
             <div className='prep xl:text-3xl sm:text-xl'>
@@ -319,7 +349,9 @@ export default function Home() {
             </div>
             </>
             )}
+             </div>
             {/* BLVCKBOOK */}
+            <div id='contact-jobs' className='section'></div>
             {section === '15' && (
             <>
             <div className='prep xl:text-3xl sm:text-xl mb-8'>
