@@ -13,6 +13,7 @@ import './HomePage.css';
 
 export default function Home() {
 
+  
   // const [intersectionEntries, setIntersectionEntries] = useState<IntersectionObserverEntry[] | null>(null);
   // const cardsRef = useRef<HTMLDivElement[]>([]);
 
@@ -61,11 +62,11 @@ export default function Home() {
       ([entry]) => {
         if (entry.isIntersecting) {
           console.log('it is intersecting', entry)
-          if (ref1.current?.classList.contains("animate3")) {
-            ref1.current.classList.remove("animate3");
+          if (ref1.current?.classList.contains("animateone")) {
+            ref1.current.classList.remove("animateone");
           }
           setTimeout(() => {
-            ref1.current?.classList.add("animate3");
+            ref1.current?.classList.add("animateone");
           }, 100);
         }
       },
@@ -83,11 +84,11 @@ export default function Home() {
       ([entry]) => {
         if (entry.isIntersecting) {
           console.log('it is intersecting', entry)
-          if (ref2.current?.classList.contains("animate3")) {
-            ref2.current.classList.remove("animate3");
+          if (ref2.current?.classList.contains("animate")) {
+            ref2.current.classList.remove("animate");
           }
           setTimeout(() => {
-            ref2.current?.classList.add("animate3");
+            ref2.current?.classList.add("animate");
           }, 100);
         }
       },
@@ -106,11 +107,11 @@ export default function Home() {
       ([entry]) => {
         if (entry.isIntersecting) {
           console.log('it is intersecting', entry)
-          if (ref3.current?.classList.contains("animate3")) {
-            ref3.current.classList.remove("animate3");
+          if (ref3.current?.classList.contains("animatetwo")) {
+            ref3.current.classList.remove("animatetwo");
           }
           setTimeout(() => {
-            ref3.current?.classList.add("animate3");
+            ref3.current?.classList.add("animatetwo");
           }, 100);
         }
       },
@@ -127,11 +128,11 @@ export default function Home() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          if (ref4.current?.classList.contains("animate3")) {
-            ref4.current.classList.remove("animate3");
+          if (ref4.current?.classList.contains("animatetwo")) {
+            ref4.current.classList.remove("animatetwo");
           }
           setTimeout(() => {
-            ref4.current?.classList.add("animate3");
+            ref4.current?.classList.add("animatetwo");
           }, 100);
         }
       },
@@ -234,11 +235,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref9.current?.classList.contains("animate3")) {
-          ref9.current.classList.remove("animate3");
+        if (ref9.current?.classList.contains("animatetwo")) {
+          ref9.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref9.current?.classList.add("animate3");
+          ref9.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -296,11 +297,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref12.current?.classList.contains("animate")) {
-          ref12.current.classList.remove("animate");
+        if (ref12.current?.classList.contains("animatetwo")) {
+          ref12.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref12.current?.classList.add("animate");
+          ref12.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -360,11 +361,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref15.current?.classList.contains("animate")) {
-          ref15.current.classList.remove("animate");
+        if (ref15.current?.classList.contains("animatetwo")) {
+          ref15.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref15.current?.classList.add("animate");
+          ref15.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -420,11 +421,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref18.current?.classList.contains("animate")) {
-          ref18.current.classList.remove("animate");
+        if (ref18.current?.classList.contains("animatetwo")) {
+          ref18.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref18.current?.classList.add("animate");
+          ref18.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -481,11 +482,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref21.current?.classList.contains("animate")) {
-          ref21.current.classList.remove("animate");
+        if (ref21.current?.classList.contains("animatetwo")) {
+          ref21.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref21.current?.classList.add("animate");
+          ref21.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -521,11 +522,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref23.current?.classList.contains("animate")) {
-          ref23.current.classList.remove("animate");
+        if (ref23.current?.classList.contains("animatetwo")) {
+          ref23.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref23.current?.classList.add("animate");
+          ref23.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -601,11 +602,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref27.current?.classList.contains("animate")) {
-          ref27.current.classList.remove("animate");
+        if (ref27.current?.classList.contains("animatetwo")) {
+          ref27.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref27.current?.classList.add("animate");
+          ref27.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -661,11 +662,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref30.current?.classList.contains("animate")) {
-          ref30.current.classList.remove("animate");
+        if (ref30.current?.classList.contains("animatetwo")) {
+          ref30.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref30.current?.classList.add("animate");
+          ref30.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -721,11 +722,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref33.current?.classList.contains("animate")) {
-          ref33.current.classList.remove("animate");
+        if (ref33.current?.classList.contains("animatetwo")) {
+          ref33.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref33.current?.classList.add("animate");
+          ref33.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -761,11 +762,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref35.current?.classList.contains("animate")) {
-          ref35.current.classList.remove("animate");
+        if (ref35.current?.classList.contains("animatetwo")) {
+          ref35.current.classList.remove("animatetwo");
         }
         setTimeout(() => {
-          ref35.current?.classList.add("animate");
+          ref35.current?.classList.add("animatetwo");
         }, 100);
       }
     },
@@ -837,6 +838,26 @@ useEffect(() => {
   return () => observer.disconnect();
 }, []);
 
+const ref39 = useRef<HTMLDivElement>(null);
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        if (ref39.current?.classList.contains("animate")) {
+          ref39.current.classList.remove("animate");
+        }
+        setTimeout(() => {
+          ref38.current?.classList.add("animate");
+        }, 100);
+      }
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(ref39.current!);
+
+  return () => observer.disconnect();
+}, []);
 
 
 
@@ -904,12 +925,12 @@ useEffect(() => {
           <Image src="/blvckpixel2.svg" className="logo" alt="Logo" width={400} height={100} />
         </div>
         <div>
-          <span className="blvckPixel text-3xl animate">BLVCK PIXEL</span>
+          <span className="blvckPixel text-3xl animate mb-12">BLVCK PIXEL</span>
         </div>
-        <div className=" text-black">
+        <div className="foresight text-black">
           <span className=" text-3xl">The foresight Company</span>
         </div>
-        <div className=''>
+        <div className='slide-up text-3xl ml-16'>
           &#91; foresight &#93;
         </div>
         <div className="">
@@ -921,7 +942,7 @@ useEffect(() => {
       </div>
       <div className="parent1 text-black text-2xl" >
         <div>
-          <span className=" text-3xl" ref={ref}>BLVCK PIXEL</span>
+          <span className=" text-3xl" ref={ref}> .</span>
         </div>
         <div>
           <span className="v text-3xl mr-8" ref={ref1}>V = &#91; vision &#93;</span>
@@ -944,14 +965,14 @@ useEffect(() => {
       <div id="why-we-exist" className="parent text-black">
         why we exist
         <div className="parent">
-            <div className='text-black text-3xl'  ref={ref4}>
+            <div className='prep text-3xl' ref={ref4}>
             &#91; anthropology + technology &#93;
             </div>
-          <div className='prep-head w-1/2' ref={ref5}>
-            <div className="prep1 text-black xl:text-2xl sm:text-xl">
+          <div className='prep-head w-1/2'>
+            <div className="prep1 text-black xl:text-2xl sm:text-xl"ref={ref5}>
               This best defines what we do at BLVCKPIXEL
             </div>
-            <div className="prep2 text-black xl:text-2xl sm:text-xl">
+            <div className="prep2 text-black xl:text-2xl sm:text-xl" ref={ref39}>
               It means we envision and prepare for a world in which human ingenuity converges with the machine intelligence to design a better future.
             </div>
           </div>
@@ -1074,8 +1095,8 @@ useEffect(() => {
           <div className="prep text-3xl"  ref={ref27}>
             &#91; our team + partners &#93;
           </div>
-          <div className='prep-head text-black w-1/2 sm:text-xl'  ref={ref28}>
-            <div className='prep1'>
+          <div className='prep-head text-black w-1/2 sm:text-xl'>
+            <div className='prep1' ref={ref28}>
               What makes our team so different?
             </div>
             <div className='prep2' ref={ref29}>
@@ -1108,7 +1129,7 @@ useEffect(() => {
           </div>
         </div>
       </div>
-      <div id="contact" className="parent text-black">
+      <div id="contact" className="parent mb-16 text-black">
         contact
         <div className="parent">
           <div className='prep xl:text-3xl sm:text-xl mb-8'  ref={ref35}>
