@@ -47,7 +47,7 @@ export default function Home() {
           }, 100);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
   
     observer.observe(ref.current!);
@@ -70,7 +70,7 @@ export default function Home() {
           }, 100);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
   
     observer.observe(ref1.current!);
@@ -92,7 +92,7 @@ export default function Home() {
           }, 100);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
   
     observer.observe(ref2.current!);
@@ -115,7 +115,7 @@ export default function Home() {
           }, 100);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
   
     observer.observe(ref3.current!);
@@ -136,7 +136,7 @@ export default function Home() {
           }, 100);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     observer.observe(ref4.current!);
@@ -158,7 +158,7 @@ export default function Home() {
           }, 100);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     observer.observe(ref5.current!);
@@ -179,7 +179,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref6.current!);
@@ -201,7 +201,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref7.current!);
@@ -221,7 +221,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref8.current!);
@@ -243,7 +243,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref9.current!);
@@ -263,7 +263,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref10.current!);
@@ -285,7 +285,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref11.current!);
@@ -305,7 +305,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref12.current!);
@@ -327,7 +327,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref13.current!);
@@ -347,7 +347,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref14.current!);
@@ -369,7 +369,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref15.current!);
@@ -389,7 +389,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref16.current!);
@@ -409,7 +409,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref17.current!);
@@ -429,7 +429,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref18.current!);
@@ -449,7 +449,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref19.current!);
@@ -470,7 +470,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref20.current!);
@@ -490,7 +490,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref21.current!);
@@ -510,7 +510,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref22.current!);
@@ -530,7 +530,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref23.current!);
@@ -550,7 +550,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref24.current!);
@@ -570,7 +570,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref25.current!);
@@ -590,7 +590,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref26.current!);
@@ -610,7 +610,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref27.current!);
@@ -630,7 +630,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref28.current!);
@@ -650,7 +650,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref29.current!);
@@ -670,7 +670,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref30.current!);
@@ -690,7 +690,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref31.current!);
@@ -710,7 +710,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref32.current!);
@@ -730,7 +730,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref33.current!);
@@ -750,7 +750,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref34.current!);
@@ -770,7 +770,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref35.current!);
@@ -790,7 +790,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref36.current!);
@@ -810,7 +810,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref37.current!);
@@ -830,7 +830,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref38.current!);
@@ -851,7 +851,7 @@ useEffect(() => {
         }, 100);
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
   observer.observe(ref39.current!);
@@ -859,6 +859,37 @@ useEffect(() => {
   return () => observer.disconnect();
 }, []);
 
+
+const [activeSection, setActiveSection] = useState('');
+
+const handleSetActive = (to: React.SetStateAction<string>) => {
+  setActiveSection(to);
+};
+
+const scrollToActiveSection = () => {
+  const menuBar = document.querySelector('.menu-items');
+  const activeItem = document.getElementById(activeSection);
+  if (menuBar && activeItem) {
+    const menuBarRect = menuBar.getBoundingClientRect();
+    const activeItemRect = activeItem.getBoundingClientRect();
+    const scrollTop = activeItemRect.top - (menuBarRect.height - activeItemRect.height) / 2;
+    menuBar.scrollTop = scrollTop;
+  }
+};
+
+useEffect(() => {
+  scrollToActiveSection();
+}, [activeSection]);
+useEffect(() => {
+  const menuBar = document.querySelector('.menu-items');
+  if (menuBar) {
+    if (activeSection === 'how-we-work' || activeSection === 'journal' || activeSection === 'contact') {
+      menuBar.classList.add('shifted-up');
+    } else {
+      menuBar.classList.remove('shifted-up');
+    }
+  }
+}, [activeSection]);
 
 
 
@@ -909,13 +940,27 @@ useEffect(() => {
 
       <div className="scrollable-menu">
         <div className="menu-items">
-          <ScrollLink to = 'who-we-are'><div className='menu-item'>&#91; who we are &#93;</div></ScrollLink>
-          <ScrollLink to = 'why-we-exist'><div className='menu-item1'> &#91; why we exist &#93;</div></ScrollLink>
-          <ScrollLink to = 'what-we-do'><div className='menu-item2'> &#91; what we do &#93;</div></ScrollLink>
-          <ScrollLink to = 'whom-we-work-for'><div className='menu-item3'> &#91; whom we work for &#93;</div></ScrollLink>
-          <ScrollLink to = 'how-we-work'><div className='menu-item4'> &#91; how we work &#93;</div></ScrollLink>
-          <ScrollLink to = 'who-we-are'><div className='menu-item5'> &#91; journal &#93;</div></ScrollLink>
-          <ScrollLink to = 'contact'><div className='menu-item6'> &#91; contact | jobs &#93;</div></ScrollLink>
+          <ScrollLink to = 'who-we-are' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item ${activeSection === 'who-we-are' ? 'active' : ''}`}>&#91; who we are &#93;</div>
+          </ScrollLink>
+          <ScrollLink to = 'why-we-exist' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item1 ${activeSection === 'why-we-exist' ? 'active' : ''}`}> &#91; why we exist &#93;</div>
+          </ScrollLink>
+          <ScrollLink to = 'what-we-do' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item2 ${activeSection === 'what-we-do' ? 'active' : ''}`}> &#91; what we do &#93;</div>
+          </ScrollLink>
+          <ScrollLink to = 'whom-we-work-for' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item3 ${activeSection === 'whom-we-work-for' ? 'active' : ''}`}> &#91; whom we work for &#93;</div>
+          </ScrollLink>
+          <ScrollLink to = 'how-we-work' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item4 ${activeSection === 'how-we-work' ? 'active' : ''}`}> &#91; how we work &#93;</div>
+          </ScrollLink>
+          {/* <ScrollLink to = 'who-we-are' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item5 ${activeSection === 'who-we-are' ? 'active' : ''}`}> &#91; journal &#93;</div>
+          </ScrollLink> */}
+          <ScrollLink to = 'contact' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item6 ${activeSection === 'contact' ? 'active' : ''}`}> &#91; contact | jobs &#93;</div>
+          </ScrollLink>
         </div>
       </div>
 

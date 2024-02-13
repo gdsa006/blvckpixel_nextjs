@@ -245,6 +245,7 @@
 .menu-item6
  {
   color: black;
+  opacity: 0.5;
   padding: 10px 0;
   font-size: 18px;
   cursor: pointer;
@@ -253,6 +254,26 @@
 .menu-item:last-child {
   border-bottom: none;
 }
+.menu-item.active,
+.menu-item1.active,
+.menu-item2.active,
+.menu-item3.active,
+.menu-item4.active,
+.menu-item5.active,
+.menu-item6.active,
+.menu-item4.active,
+.menu-item6.active  {
+  opacity: 1;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: bold;
+  animation: slideUp 1s ease-in-out 1s forwards;
+}
+.menu-items.shifted-up {
+  top: -20vh;
+}
+
+
 .animateone{
   transform: translateY(-10vh); /* Adjust the value as needed */
   transition: transform 0.5s ease; 
@@ -310,5 +331,14 @@
     }
     to {
       transform: translateY(-250px);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
     }
   }
