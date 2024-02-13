@@ -14,7 +14,8 @@ p{
 
 .slide h1{
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-weight: normal;
 }
 
 .slide h3{
@@ -28,6 +29,32 @@ p{
     font-size: 12px;
 }
 
-#who-we-are{
-    
+.scrollable-menu .menu-item{
+    font-family: 'HelveticaNeueCyr-Light';
+    font-size: 16px;
+    text-align: center;
 }
+
+.scrollable-menu a.active div{
+    color: #000000 !important;
+    font-family: 'HelveticaNeueCyr-Light';
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+
+}
+
+
+
+
+.scrollable-menu a.active div::after {
+    content: '[';
+    position: absolute;
+    left: 0;
+  }
+  
+  .scrollable-menu a.active div::before {
+    content: ']';
+    position: absolute;
+    right: 0;
+  }

@@ -266,9 +266,9 @@
 .menu-item6.active  {
   opacity: 1;
   position: relative;
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: bold;
-  animation: slideUp 1s ease-in-out 1s forwards;
+  /* animation: slideUp 1s ease-in-out 1s forwards; */
 }
 .menu-items.shifted-up {
   top: -20vh;

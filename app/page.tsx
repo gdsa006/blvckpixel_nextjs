@@ -911,7 +911,7 @@ useEffect(() => {
       modules={[Autoplay, Pagination, EffectFade]}
       className="mySwiper"
     >
-      <SwiperSlide className="slide">
+      {/* <SwiperSlide className="slide">
         <div className="bg-[url('/pixel3.png')] flex flex-col justify-center p-10 bg-cover object-contain h-screen w-screen">
           <h1 className='text-5xl font-bold md:text-7xl'>The Rise of AI</h1>
           <h3 className='text-2xl font-medium md:text-3xl'>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
@@ -932,13 +932,37 @@ useEffect(() => {
           <h5 className='text-base md:text-lg'><Link href='/'>→ Click [here] </Link> to read the journal</h5>
         </div>
       </SwiperSlide>
+    </Swiper> */}
+
+
+    <SwiperSlide className="slide">
+        <div className="bg-[url('/pixel3.png')] flex flex-col justify-center p-10 bg-cover object-contain h-screen w-screen">
+          <h1 className=''>The Rise of AI</h1>
+          <h3 className=''>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
+          <h5 className=''><Link href='/'>→ Click [here] </Link> to read the journal</h5>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="slide">
+        <div className="bg-[url('/pixel2.png')] flex flex-col justify-center p-10 bg-cover object-contain h-screen w-screen">
+          <h1 className=''>Quantum Leap</h1>
+          <h3 className=''>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
+          <h5 className=''><Link href='/'>→ Click [here] </Link> to read the journal</h5>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="slide">
+        <div className="bg-[url('/pixel1.png')] flex flex-col justify-center p-10 bg-cover object-contain h-screen w-screen">
+          <h1 className=''>Cognitive Cities</h1>
+          <h3 className=''>Creating and accelerating critical advantages through cutting-edge strategy and operations</h3>
+          <h5 className=''><Link href='/'>→ Click [here] </Link> to read the journal</h5>
+        </div>
+      </SwiperSlide>
     </Swiper>
   </section>
 
 
     <div className="container">
 
-      <div className="scrollable-menu">
+      <div className="scrollable-menu" style={{ display: 'none' }}>
         <div className="menu-items">
           <ScrollLink to = 'who-we-are' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
             <div className={`menu-item ${activeSection === 'who-we-are' ? 'active' : ''}`}>&#91; who we are &#93;</div>
@@ -960,6 +984,31 @@ useEffect(() => {
           </ScrollLink> */}
           <ScrollLink to = 'contact' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
             <div className={`menu-item6 ${activeSection === 'contact' ? 'active' : ''}`}> &#91; contact | jobs &#93;</div>
+          </ScrollLink>
+        </div>
+      </div>
+<div className="scrollable-menu">
+        <div className="menu-items">
+          <ScrollLink to = 'who-we-are' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item ${activeSection === 'who-we-are' ? 'active' : ''}`}>who we are</div>
+          </ScrollLink>
+          <ScrollLink to = 'why-we-exist' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item1 ${activeSection === 'why-we-exist' ? 'active' : ''}`}>why we exist</div>
+          </ScrollLink>
+          <ScrollLink to = 'what-we-do' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item2 ${activeSection === 'what-we-do' ? 'active' : ''}`}>what we do</div>
+          </ScrollLink>
+          <ScrollLink to = 'whom-we-work-for' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item3 ${activeSection === 'whom-we-work-for' ? 'active' : ''}`}>whom we work for</div>
+          </ScrollLink>
+          <ScrollLink to = 'how-we-work' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item4 ${activeSection === 'how-we-work' ? 'active' : ''}`}>how we work</div>
+          </ScrollLink>
+          {/* <ScrollLink to = 'who-we-are' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item5 ${activeSection === 'who-we-are' ? 'active' : ''}`}>journal</div>
+          </ScrollLink> */}
+          <ScrollLink to = 'contact' spy={true} smooth={true} offset={-70} duration={500} onSetActive={handleSetActive}>
+            <div className={`menu-item6 ${activeSection === 'contact' ? 'active' : ''}`}>contact | jobs</div>
           </ScrollLink>
         </div>
       </div>
