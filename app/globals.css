@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('fonts.css');
+@import url('media-queries.css');
+@import url('homepage_new.css');
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 255, 255, 255;
