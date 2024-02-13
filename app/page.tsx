@@ -997,7 +997,7 @@ useEffect(() => {
         </div>
       </div>
       <div className="parent text-black">
-        <div className="para1 text-black text-2xl" ref={ref3}>
+        <div className="prep1 text-black text-2xl" ref={ref3}>
           Our Vision is focused on the convergence of the technologies that will affect the way we live and work in the coming years: <br />
           artificial intelligence, extended reality, blockchain, robotics, ... <br />
           <br />
@@ -1024,13 +1024,13 @@ useEffect(() => {
         </div>
         <div className="parent">
           <div className="para-exist w-1/2">
-            <div className="para-exist1 text-black xl:text-2xl sm:text-xl" ref={ref6}>
+            <div className="prep1 text-black xl:text-2xl sm:text-xl" ref={ref6}>
               The stone ax, the wheel, the steam engine, the computer, and now AI - the advancement of humanity has always been driven by our ability to innovate. No other technology will have been as impactful on our world as artificial intelligence.
             </div>
-            <div className="para-exist2 text-black xl:text-2xl sm:text-xl" ref={ref7}>
+            <div className="prep2 text-black xl:text-2xl sm:text-xl" ref={ref7}>
               We attempt to foresee these developments at all levels.
             </div>
-            <div className="para-exist3 text-black xl:text-2xl sm:text-xl" ref={ref8}>
+            <div className="prep3 text-black xl:text-2xl sm:text-xl" ref={ref8}>
               The emergence of cognitive technologies will result in the most rapid socio-economic disruption since the beginning of recorded history. In the next few years, no matter the enterprise, government or organization, every business and operational model will have to adapt, and evolve.
             </div>
           </div>
@@ -1095,7 +1095,7 @@ useEffect(() => {
             <div className='prep1' ref={ref19}>
               Implementation | Now!
             </div>
-            <div className='prep2' ref={ref20}>
+            <div className='prep1' ref={ref20}>
               -Conception off real-world business cases and use cases<br />
               -Innovation workshops for management, product development, and marketing teams <br />
               -Prototyping of innovative business models and workplace systems <br />

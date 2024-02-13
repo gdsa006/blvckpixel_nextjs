@@ -16,9 +16,10 @@
 }
 
 .animate {
+  visibility: hidden; /* Initially hidden */
   opacity: 0;
   transform: translateY(10vh);
-  animation: appear-from-bottom 1.5s ease forwards, fadeIn 2s ease forwards;
+  animation: appear-from-bottom 2s ease forwards, fadeIn 2s ease 2s forwards;
 }
 
 @keyframes fadeIn {
@@ -26,6 +27,7 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -159,13 +161,11 @@
 .para2 {
   animation-delay: 2s;
   margin-bottom: 5vh;
-  opacity: 0;
 }
 
 .para3 {
   animation-delay: 3s;
   margin-bottom: 2vh;
-  opacity: 0;
 }
 
 .para-exist{
@@ -210,6 +210,7 @@
 }
 
 .prep2 {
+  opacity: 0;
   animation-delay: 2s;
   margin-bottom: 5vh;
 }
@@ -221,8 +222,8 @@
 
 /* menubar */
 
+
 .scrollable-menu {
-  z-index: 2;
   position: fixed;
   top: 10vh;
   right:-2vw;
@@ -295,15 +296,7 @@
     transform: translateY(0);
   }
 }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+
   
   @keyframes fadeOut {
     from {
