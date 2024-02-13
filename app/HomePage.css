@@ -3,27 +3,12 @@
   height: 100vh;
   overflow: hidden;
 }
-/* .scrollable-section{
-  margin-left: 80vw;
-}
-.who-we-are {
-  height: 100vh;
-}
-.why-we-exist{
-  height: 100vh;
-}
-.what-we-do {
-  height: 100vh;
-}
-.whom-we-work{
-  height: 100vh;
-} */
 .logo {
   position: absolute;
   bottom: 10vh;
   left: 20px;
   opacity: 0;
-  animation: fadeIn 2s ease-in-out 1s forwards, fadeOut 2s ease-in-out 8s forwards;
+  animation: fadeIn 2s ease-in-out 1s forwards;
 }
 
 .blvckPixel {
@@ -31,7 +16,7 @@
   bottom: 10vh;
   left: 100px;
   opacity: 0;
-  animation: fadeIn 2s ease-in-out 2s forwards, fadeOut 1s ease-in-out 4s forwards;
+  animation: fadeIn 2s ease-in-out 2s forwards;
   color: black;
 }
 
@@ -74,6 +59,51 @@
   transition: opacity 1s ease-in-out 8s;
   color: black;
   text-align: left;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(10vh);
+  animation: appear-from-bottom 2s ease forwards, fadeIn 3s ease 2s forwards;
+}
+.animatethree {
+  opacity: 0;
+  transform: translateY(10vh);
+  animation: appear-from-bottom 9s ease forwards, fadeIn 1s ease 10s forwards;
+}
+.animateFade{
+  animation: fadeIn 2s ease-in-out forwards, fadeOut 1s ease-in-out 2s forwards;
+}
+.animateFadee{
+  animation: fadeIn 2s ease-in-out 5s forwards, slideUpp 2s ease-in 5s forwards;
+}
+.animateone{
+  transform: translateY(-10vh); /* Adjust the value as needed */
+  transition: transform 0.5s ease; 
+}
+
+.animatetwo {
+  transform: translateY(-40vh); /* Adjust the value as needed */
+  transition: transform 0.5s ease;  /* Final vertical position */
+}
+.slide-up {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 2s forwards;
+  animation: slideUpp 2s ease-in-out 1s forwards;
+}
+.slide-upp {
+  animation: slideUpp 4s ease forwards;
+}
+
+@keyframes slideUpp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
 }
 
 .blvckPixell {
@@ -200,14 +230,7 @@
   transition: transform 0.7s ease;
 }
 
-.childDiv {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: black;
-}
+
 
 /* menubar */
 
@@ -256,14 +279,15 @@
   }
 }
   
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
   
   @keyframes fadeOut {
     from {
@@ -292,4 +316,14 @@
     to {
       transform: translateY(-250px);
     }
+  }
+  
+
+  .childDiv {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
   }
