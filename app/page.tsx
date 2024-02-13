@@ -1018,11 +1018,14 @@ useEffect(() => {
                 )}
                 {section === '2' && (
                   <>
-                <div className="childDiv">
-                    <span className="foresight text-3xl">
-                      The foresight Company
-                    </span>
+                <div className="parent">
+                  <div className="childDiv">
+                    <Image src="/blvckpixel2.svg" className="logo" alt="Logo" width={400} height={100} />
                   </div>
+                  <div className="childDiv">
+                    <span className="blvckPixel text-4xl mb-8">the foresight company</span>
+                  </div>
+                </div>
                   <div className='slide-upp'>
                     &#91; foresight &#93;
                   </div>
@@ -1110,7 +1113,7 @@ useEffect(() => {
                       Through advisory, consulting, strategic planning, prototyping, and realization, we prepare and transition our clients into the age of artificial general intelligence
                     </div>
                     <div className='prep2' ref={ref11}>
-                      Our future proofing services is a 3 stages cycle of foresight, preparation, and implementation.
+                      Our future proofing services is a 3 stages cycle of <span className='text-pink-700'><i>foresight</i></span>, <span className='text-pink-700'><i> preparation, </i></span>and <span className='text-pink-700'><i>implementation</i></span>
                     </div>
                   </div>
                 </div>
@@ -1124,7 +1127,7 @@ useEffect(() => {
                 </div>
                   <div className='prep-head text-black w-1/2 sm:text-xl'>
                     <div className='prep1' ref={ref13}>
-                      Foresight | 3-5 years ahead
+                    <span className='text-pink-700'><i>Foresight</i></span> | 3-5 years ahead
                     </div>
                     <div className='prep2' ref={ref14}>
                       -Foresight Forum Conferences: expertise on future tech <br /> -Strategic Foresight Reports: bespoke research and presentations
@@ -1141,7 +1144,7 @@ useEffect(() => {
                 </div>
                   <div className='prep-head text-black w-1/2 sm:text-xl'>
                     <div className='prep1' ref={ref16}>
-                      Preparation | 1-2 years ahead
+                    <span className='text-pink-700'><i>Preparation</i></span> | 1-2 years ahead
                     </div>
                     <div className='prep2' ref={ref17}>
                       -Development of strategies to respond to rapidly evolving markets<br /> 
@@ -1160,7 +1163,7 @@ useEffect(() => {
                   </div>
                   <div className='prep-head text-black w-1/2 sm:text-xl' ref={ref19}>
                     <div className='prep1'>
-                      Implementation | Now!
+                    <span className='text-pink-700'><i>Implementation</i></span> | Now!
                     </div>
                     <div className='prep1' ref={ref20}>
                       -Conception off real-world business cases and use cases<br />
@@ -1179,9 +1182,9 @@ useEffect(() => {
               &#91; clients &#93;
             </div>
             <div className='prep-head text-2xl mb-12' ref={ref22}>
-              They inspire us. <br />
-              We advise them. <br />
-              We innovate as one.
+              They <span className='text-pink-700'><i>inspire</i></span> us. <br />
+              We <span className='text-pink-700'><i>advise</i></span> them. <br />
+              We <span className='text-pink-700'><i>innovate</i></span> as one.
               {/* slider here */}
             </div>
             </div>
@@ -1199,7 +1202,7 @@ useEffect(() => {
               They trust us to deliver informative research, strategic planning reports, educational experiences , workplace and business innovationss, use case prototypes.
             </div>
             <div className='prep3' ref={ref26}>
-              If you would like to join this illustrious circle of clients please contact us to start the conversation: <Link href='hello@blvckpixel.com'>hello@blvckpixel.com</Link>
+              If you would like to join this illustrious circle of clients please contact us to start the conversation: <Link href='hello@blvckpixel.com'><span className='text-pink-700'><i>hello@blvckpixel.com</i></span></Link>
             </div>
             </div>
             </div>
@@ -1262,7 +1265,7 @@ useEffect(() => {
               let&apos;s talk + meet + collaborate
             </div>
             <div className='prep2' ref={ref37}>
-              Fell free to ping us if you want to chat, we&apos;sll be happy to share a coffee in our Paris headquarters or a fresh juice in our Dubai bureau.
+              Fell free to ping us if you want to chat, we&apos;sll be happy to share a coffee in our <span className='text-pink-700'><i>Paris</i></span> headquarters or a fresh juice in our <span className='text-pink-700'><i>Dubai</i></span> bureau.
           </div>
           <div className='prep3'  ref={ref38}>
             And yes, we&apos;re always looking for talents. ;&nbsp;
