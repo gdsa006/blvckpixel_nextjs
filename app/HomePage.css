@@ -17,8 +17,8 @@
 
 .animate {
   opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(10vh);
+  animation: appear-from-bottom 1.5s ease forwards, fadeIn 2s ease forwards;
 }
 
 @keyframes fadeIn {
