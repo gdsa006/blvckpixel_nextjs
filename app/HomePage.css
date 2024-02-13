@@ -189,7 +189,7 @@
 }
 
 .prep{
-  position: absolute;
+  position: relative;
   color: black;
   left: 10vh;
   opacity: 1;
@@ -202,15 +202,18 @@
 
 }
 .prep1 {
+  opacity: 0;
   animation-delay: 1s;
   margin-bottom: 5vh;
 }
 
 .prep2 {
+  opacity: 0;
   animation-delay: 2s;
   margin-bottom: 5vh;
 }
 .prep3 {
+  opacity: 0;
   animation-delay: 2s;
   margin-bottom: 5vh;
 }
@@ -255,7 +258,7 @@
 }
 .animate3 {
   opacity: 0;
-  transform: translateY(10vh);
+  transform: translateY(1000px);
   animation: appear-from-bottom 1.5s ease forwards, fadeIn 2s ease forwards;
 }
 

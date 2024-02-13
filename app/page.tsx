@@ -127,11 +127,11 @@ export default function Home() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          if (ref4.current?.classList.contains("animate")) {
-            ref4.current.classList.remove("animate");
+          if (ref4.current?.classList.contains("animate3")) {
+            ref4.current.classList.remove("animate3");
           }
           setTimeout(() => {
-            ref4.current?.classList.add("animate");
+            ref4.current?.classList.add("animate3");
           }, 100);
         }
       },
@@ -234,11 +234,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        if (ref9.current?.classList.contains("animate")) {
-          ref9.current.classList.remove("animate");
+        if (ref9.current?.classList.contains("animate3")) {
+          ref9.current.classList.remove("animate3");
         }
         setTimeout(() => {
-          ref9.current?.classList.add("animate");
+          ref9.current?.classList.add("animate3");
         }, 100);
       }
     },
@@ -944,7 +944,7 @@ useEffect(() => {
       <div id="why-we-exist" className="parent text-black">
         why we exist
         <div className="parent">
-            <div className='prep text-black text-3xl'  ref={ref4}>
+            <div className='text-black text-3xl'  ref={ref4}>
             &#91; anthropology + technology &#93;
             </div>
           <div className='prep-head w-1/2' ref={ref5}>
@@ -1100,8 +1100,8 @@ useEffect(() => {
           <div className='prep xl:text-3xl sm:text-xl'  ref={ref33}>
             &#91; production &#93;
           </div>
-          <div className='prep-head text-black w-1/2 sm:text-xl'  ref={ref34}>
-            <div className='prep1'>
+          <div className='prep-head text-black w-1/2 sm:text-xl'>
+            <div className='prep1' ref={ref34}>
               In addition, our partners bring complementary services that assure the readiness and scalability of our use cases and new business models.
             </div>
             {/* slider here */}
